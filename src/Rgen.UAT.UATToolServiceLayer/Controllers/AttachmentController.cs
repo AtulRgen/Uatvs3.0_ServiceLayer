@@ -734,7 +734,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl =HttpContext.Request.Headers["appurl"]; 
+                string AppUrl = HttpContext.Request.Headers["appurl"]; 
 
                 if (!string.IsNullOrEmpty(AppUrl))
                 {
@@ -792,7 +792,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
 
         [HttpGet, Route("GetFileToDownload")]
         //public byte[] GetFileToDownload(int id)
-        public FileContentResult GetFileToDownload(int id)
+        public FileContentResult GetFileToDownload(int id, string Url)
         {
 
             byte[] fileContent = new byte[0];
@@ -803,7 +803,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl = HttpContext.Request.Headers["appurl"]; 
+                string AppUrl = Url; 
 
                 if (!string.IsNullOrEmpty(AppUrl))
                 {
