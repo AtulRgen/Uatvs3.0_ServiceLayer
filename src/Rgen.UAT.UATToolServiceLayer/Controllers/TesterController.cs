@@ -912,7 +912,10 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                         }
 
                         dr.TestPass_ID = (tester.testPassId == "") ? Convert.ToInt32(DBNull.Value) : Convert.ToInt32(tester.testPassId);
-                        dr.Area_ID = (tester.areaId == "") ? Convert.ToInt32(DBNull.Value) : Convert.ToInt32(tester.areaId);
+                        int Area_ID = 0;
+                        int.TryParse(tester.areaId, out Area_ID);
+                        dr.Area_ID = (tester.areaId == "") ? Convert.ToInt32(0) : Convert.ToInt32(Area_ID);
+                       
                         dr.Role_ID = Convert.ToInt32(tester.roleArray[i]);
                         dr.User_ID = (tester.spUserId == "") ? Convert.ToInt32(DBNull.Value) : Convert.ToInt32(tester.spUserId);
 
