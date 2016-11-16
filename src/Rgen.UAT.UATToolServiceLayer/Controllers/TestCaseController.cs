@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -462,7 +462,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                     cmd.Parameters.Add(new SqlParameter("@DisplayID", SqlDbType.VarChar, 500) { Value = oTestCase.testCaseDisplayId });
                     cmd.Parameters.Add(new SqlParameter("@Description", SqlDbType.VarChar, 500) { Value = oTestCase.testCaseDesp });
                     cmd.Parameters.Add(new SqlParameter("@Sequence", SqlDbType.Int) { Value = oTestCase.testCaseSeq });
-                    cmd.Parameters.Add(new SqlParameter("@Ett", SqlDbType.Decimal) { Value = oTestCase.testCaseETT });
+                    cmd.Parameters.Add(new SqlParameter("@Ett", SqlDbType.NVarChar, 500) { Value = (oTestCase.testCaseETT == "") ? null : oTestCase.testCaseETT });
                     cmd.Parameters.Add(new SqlParameter("@StatementType", SqlDbType.NVarChar, 500) { Value = statementType });
                     SqlParameter outparam = new SqlParameter("@Ret_Parameter", SqlDbType.NVarChar, 500) { Direction = ParameterDirection.Output };
                     cmd.Parameters.Add(new SqlParameter("@SchemaName", SqlDbType.NVarChar, 500) { Value = SchemaName });
