@@ -734,7 +734,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
+                string AppUrl =HttpContext.Request.Headers["appurl"]; 
 
                 if (!string.IsNullOrEmpty(AppUrl))
                 {
@@ -803,7 +803,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
+                string AppUrl = HttpContext.Request.Headers["appurl"]; 
 
                 if (!string.IsNullOrEmpty(AppUrl))
                 {
