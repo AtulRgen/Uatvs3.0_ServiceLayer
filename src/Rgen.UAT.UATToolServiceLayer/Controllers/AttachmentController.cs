@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,6 +36,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
         {
             _context = context;
         }
+
         // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -351,9 +352,8 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             if (string.IsNullOrEmpty(_clientSchemaName))
                 return null;
 
-           
-            AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
-            SchemaName = "U0054";
+
+
             using (var cmd = _context.Database.GetDbConnection().CreateCommand())
             {
                 cmd.CommandText = "UAT.spUpdateFileDataInAttachment";
@@ -374,9 +374,9 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                     cmd.Connection.Open();
 
                 int _res = cmd.ExecuteNonQuery();
-               // bool outval = (bool)cmd.Parameters["@outval"].Value;
-                 outval =Convert.ToInt32(cmd.Parameters["@outval"].Value);
-                if (_res != 0 )
+                // bool outval = (bool)cmd.Parameters["@outval"].Value;
+                outval = Convert.ToInt32(cmd.Parameters["@outval"].Value);
+                if (_res != 0)
                 {
                     isUpload = true;
                 }
@@ -389,6 +389,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
         [Consumes("application/json", "application/json-patch+json", "multipart/form-data")]
         public IActionResult UploadFile()
         {
+            //string AppUrl = HttpContext.Request.Headers["appurl"];
             string AppUrl = HttpContext.Request.Headers["appurl"];
             string SchemaName = "";
             string _SpUserId = HttpContext.Request.Headers["LoggedInUserSPUserId"];
@@ -403,8 +404,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                 isUpload = false;
 
             }
-            AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
-            SchemaName = "U0054";
+
             /*test Code 1*/
             byte[] byt;
             using (var reader = new StreamReader(HttpContext.Request.Form.Files["file"].OpenReadStream()))
@@ -527,18 +527,18 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                     if (attachment.testStepId.IndexOf(',') != -1)// if (attachment.testStepId.Length > 1)
                     {
                         string[] testStepIds = attachment.testStepId.Split(',');
-                       
+
                         foreach (string tsId in testStepIds)
                         {
                             tsDataTable.Add(new clsTestStepIdTableDataTable
                             {
-                                RowID = Convert.ToInt32(ik+1),
+                                RowID = Convert.ToInt32(ik + 1),
                                 TestStep_ID = Convert.ToInt32(testStepIds[ik])//Convert.ToInt32(testStepIds)
-                               
-                        });
-                        ik++;
+
+                            });
+                            ik++;
                         }
-                        
+
                     }
                     else
                     {
@@ -727,14 +727,14 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
         {
 
             byte[] fileContent = new byte[0];
-            string base64String="";
+            string base64String = "";
             Attachment_view obj = new Attachment_view();
 
             try
             {
                 string SchemaName = "";
 
-                string AppUrl ="http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
+                string AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
 
                 if (!string.IsNullOrEmpty(AppUrl))
                 {
@@ -744,11 +744,10 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                 {
 
                 }
-                AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
-                SchemaName = "U0054";
+
                 var filename = "";
                 var contentType = "";
-              
+
                 using (var cmd = _context.Database.GetDbConnection().CreateCommand())
                 {
                     cmd.CommandText = "UAT.spGetAttachmentToDownload";
@@ -773,9 +772,9 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                             Response.ContentType = contentType;
                             Response.Headers.Add("content-disposition", "attachment;filename=" + dataReader["FileName"].ToString());
                             //Response.Body.WriteAsync(fileContent, 0, fileContent.Length);
-                            Response.WriteAsync("data:" + contentType + ";base64," + base64String);                     
+                            Response.WriteAsync("data:" + contentType + ";base64," + base64String);
                         }
-                        obj.fileData = "data:"+contentType+ ";base64," + base64String;
+                        obj.fileData = "data:" + contentType + ";base64," + base64String;
                         return Json(obj);
 
                     }
@@ -814,8 +813,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                 {
 
                 }
-                AppUrl = "http://localhost:1582";//HttpContext.Request.Headers["appurl"]; 
-                SchemaName = "U0054";
+
                 var filename = "";
                 var contentType = "";
 
@@ -844,7 +842,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                             Response.Headers.Add("content-disposition", "inline;filename=" + dataReader["FileName"].ToString());//fordownload directly//Response.Headers.Add("content-disposition", "attachment;filename=" + dataReader["FileName"].ToString());
 
                             Response.Body.WriteAsync(fileContent, 0, fileContent.Length);
-                           // Response.WriteAsync("data:" + contentType + ";base64," + base64String);
+                            // Response.WriteAsync("data:" + contentType + ";base64," + base64String);
                         }
                         //obj.fileData = "data:" + contentType + ";base64," + base64String;
                         //return Json(obj);
@@ -859,7 +857,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                 return null;
             }
             //return Json(base64String);
-           // return fileContent;
+            // return fileContent;
         }
     }
 }
