@@ -925,7 +925,8 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
         [HttpGet, Route("GetAttachmentFile")]
         public FileContentResult GetAttachmentFile(int id,string _Appurl)
         {
-
+             var filename = "";
+             var contentType = "";
             byte[] fileContent = null;
             try
             {
@@ -945,8 +946,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
 
                 }
 
-                var filename = "";
-                var contentType = "";
+               
 
                 using (var cmd = _context.Database.GetDbConnection().CreateCommand())
                 {
@@ -970,7 +970,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                             Response.Body.WriteAsync(fileContent, 0, fileContent.Length);
                         }
 
-                        return File(fileContent, contentType, filename);
+                       
                     }
 
                 }
@@ -978,9 +978,9 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             catch (Exception ex)
             {
 
-                return null;
+              
             }
-
+        return File(fileContent, contentType, filename);
 
         }
 
