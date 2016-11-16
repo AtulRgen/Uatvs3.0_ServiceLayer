@@ -364,12 +364,14 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
                 _result.Add(clsGlobalVariables._errorText, "Actual Attachment Name is required");
                 return _result;
             }
+            /*
             else if (string.IsNullOrEmpty(oActResult.actAttachmentUrl))
             {
                 //send service level Exception as service response
                 _result.Add(clsGlobalVariables._errorText, "Actual Attachment URL is required");
                 return _result;
             }
+            */
             else if (string.IsNullOrEmpty(oActResult.actAttachmentIndex))
             {
                 //send service level Exception as service response
