@@ -1045,7 +1045,62 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
 
 
         }
+        [HttpGet, Route("GetExpectedAttachmentIDbyTCID/{TCID}")]
+        public List<clsAttachmetnIDs> GetExpectedAttachmentIDbyTCID(string TCID)
+        {
+            try
+            {
+                string AppUrl = "";
+                string SpUserId = HttpContext.Request.Headers["LoggedInUserSPUserId"];
+                string SchemaName = "";
+                if (!string.IsNullOrEmpty(AppUrl))
+                {
+                    SchemaName = new clsUatClient(_context).GetClientSchema(AppUrl);
+                }
+                else
+                {
+                    return null;
 
+                }
+                List<clsAttachmetnIDs> _ids = new List<clsAttachmetnIDs>();
+                using (var cmd = _context.Database.GetDbConnection().CreateCommand())
+                {
+                    cmd.CommandText = "UAT.GetIdforExpectedAttachment";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add(new SqlParameter("@TCId", SqlDbType.NVarChar, 500) { Value = TCID });
+                    cmd.Parameters.Add(new SqlParameter("@SchemaName", SqlDbType.VarChar, 500) { Value = SchemaName });
+
+                    if (cmd.Connection.State != ConnectionState.Open)
+                        cmd.Connection.Open();
+                    var retObject = new List<dynamic>();
+
+                    using (var dr = cmd.ExecuteReader())
+                    {
+
+                        while (dr.Read())
+                        {
+                            _ids.Add(new clsAttachmetnIDs() { Ids = Convert.ToString(dr[0]) });
+                        }
+
+
+                        return _ids;
+
+
+
+
+                    }
+
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return null;
+            }
+        }
         [HttpGet, Route("GetAttachmentIDbyChildID/{childID}")]
         public List<clsAttachmetnIDs> GetAttachmentIDbyChildID(string childID)
         {
