@@ -922,8 +922,8 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             return Json(_msg);
         }
 
-        [HttpGet, Route("GetAttachmentFile/{id}&{appurl}")]
-        public FileContentResult GetAttachmentFile(int id,string _AppUrl)
+        [HttpGet, Route("GetAttachmentFile/{id}")]
+        public FileContentResult GetAttachmentFile(int id)
         {
 
             byte[] fileContent = null;
@@ -931,7 +931,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl = _AppUrl;
+                string AppUrl = HttpContext.Request.Headers["appurl"];
 
                 
 
@@ -1051,7 +1051,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
         {
             try
             {
-                string AppUrl = "";
+                string AppUrl = HttpContext.Request.Headers["appurl"];
                 string SpUserId = HttpContext.Request.Headers["LoggedInUserSPUserId"];
                 string SchemaName = "";
                 if (!string.IsNullOrEmpty(AppUrl))
