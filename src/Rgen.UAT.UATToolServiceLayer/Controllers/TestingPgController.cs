@@ -703,7 +703,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             {
                 string SchemaName = "";
 
-                string AppUrl = "";
+                string AppUrl = HttpContext.Request.Headers["appurl"];
                 string SpUserId = HttpContext.Request.Headers["LoggedInUserSPUserId"];
 
                 if (!string.IsNullOrEmpty(AppUrl))
