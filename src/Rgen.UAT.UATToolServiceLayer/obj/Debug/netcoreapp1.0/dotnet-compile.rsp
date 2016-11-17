@@ -1,5 +1,5 @@
---temp-output:D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\obj\Debug\netcoreapp1.0\
---out:D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\bin\Debug\netcoreapp1.0\Rgen.UAT.UATToolServiceLayer.dll
+--temp-output:C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\obj\Debug\netcoreapp1.0\
+--out:C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\bin\Debug\netcoreapp1.0\Rgen.UAT.UATToolServiceLayer.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -204,63 +204,65 @@
 --reference:C:\Users\atul.sirsode\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\atul.sirsode\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\atul.sirsode\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll
---resource:"D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\obj\Debug\netcoreapp1.0\Rgen.UAT.UATToolServiceLayerdotnet-compile.deps.json",Rgen.UAT.UATToolServiceLayer.deps.json
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Program.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Startup.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\AttachmentController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\CompanyRegController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ConfigurationController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\DashboardController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\FeedbackController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\FileUploadController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\GroupPortfolioController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\LoginController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ProjectMgmtController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ReportController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\StakeholderDashboardController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestCaseController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TesterController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestingPgController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestPassController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestStepController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TriageController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\UserRegistrationController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ValuesController.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Attachment.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsAddTestPassAttachment.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsCompanyReg.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDbContext.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDetailAnalysis.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDropdown.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsFeedBack.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsGlobalVariables.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsLiveDataContext.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsProjectDetails.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsProjectMgmt.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsReport.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsStakeholderDbTSDetails.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestCase.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTester.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTesterParmcs.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTesterTypeDataTable.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestingPg.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestingTestCases.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestPass.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTestPassParm.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestterList.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTriage.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUatClient.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUserDataTable.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsUserRegistration.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUserSecurity.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUtility.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Configuration.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GenericEntities.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GroupPortfolio.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GroupPortfolioProject.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GrpPortfolioProjectTP.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Project.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestCase.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestPassTesterRoles.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestStep.cs
-D:\UAT3.0 TFS\UAT\UATv3.0\WebApi\Rgen.UAT.UATToolServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\UserRegModel.cs
+--resource:"C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\obj\Debug\netcoreapp1.0\Rgen.UAT.UATToolServiceLayerdotnet-compile.deps.json",Rgen.UAT.UATToolServiceLayer.deps.json
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Program.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Startup.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\AttachmentController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\CompanyRegController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ConfigurationController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\DashboardController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\FeedbackController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\FileUploadController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\GroupPortfolioController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\LoginController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ProjectMgmtController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ReportController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\StakeholderDashboardController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestCaseController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TesterController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestingPgController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestPassController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TestStepController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\TriageController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\UserInfoController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\UserRegistrationController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Controllers\ValuesController.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Attachment.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsAddTestPassAttachment.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsCompanyReg.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDbContext.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDetailAnalysis.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsDropdown.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsFeedBack.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsGlobalVariables.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsLiveDataContext.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsProjectDetails.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsProjectMgmt.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsReport.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsStakeholderDbTSDetails.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestCase.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTester.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTesterParmcs.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTesterTypeDataTable.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestingPg.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestingTestCases.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestPass.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsTestPassParm.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTestterList.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsTriage.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUatClient.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUserDataTable.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\ClsUserRegistration.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUserSecurity.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\clsUtility.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Configuration.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GenericEntities.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GroupPortfolio.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GroupPortfolioProject.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\GrpPortfolioProjectTP.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\Project.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestCase.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestPassTesterRoles.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\TestStep.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\UserInfo.cs
+C:\Users\atul.sirsode\Source\Repos\Uatvs3.0_ServiceLayer\src\Rgen.UAT.UATToolServiceLayer\Models\UserRegModel.cs
