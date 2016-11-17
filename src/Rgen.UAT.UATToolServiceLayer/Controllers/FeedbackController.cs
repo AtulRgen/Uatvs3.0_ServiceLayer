@@ -13,7 +13,7 @@ using System.Xml.Serialization;
 using System.Xml.Linq;
 using System.IO;
 
-// For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+/* For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860 */
 
 namespace Rgen.UAT.UATToolServiceLayer.Controllers
 {
@@ -32,22 +32,22 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             _context = context;
         }
 
-        // GET: api/values
+        /* GET: api/values*/
         [HttpGet]
         public string Get()
         {
             return "value";
         }
 
-        // GET api/values/5
+        /* GET api/values/5*/
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        //Get TestPass/TestCase level feedback, rating value along with Feedback_Type configured feedback type in TestPass Table
-        // Also get Feedback of Tester from TestStepPlan Table for a TestStep with a particular role of Tester
+        /*Get TestPass/TestCase level feedback, rating value along with Feedback_Type configured feedback type in TestPass Table
+         Also get Feedback of Tester from TestStepPlan Table for a TestStep with a particular role of Tester*/
         [HttpGet, Route("GetFeedback/{projectId}/{type}")]
         public List<clsFeedBack> GetFeedback(int projectId, string type)
         {
@@ -253,7 +253,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             }
         }
 
-        //Insert Feedback in TestStepPlan Table from Feedback Page
+        /*Insert Feedback in TestStepPlan Table from Feedback Page*/
         [HttpPost, Route("InsertUpdateFeedBack")]
         public Dictionary<string, string> InsertUpdateFeedBack([FromBody]FeedBackTestSteps oFeedback)
         {
@@ -403,7 +403,7 @@ namespace Rgen.UAT.UATToolServiceLayer.Controllers
             return _result;
         }
 
-        // Get Data for Detailed Analysis Page
+        /* Get Data for Detailed Analysis Page*/
         [HttpGet, Route("GetDropdownDataForDetailAnalysis_Portfolio")]
         public List<DropdownDataForDetailAnalysis> GetDropdownDataForDetailAnalysis_Portfolio()
         {
